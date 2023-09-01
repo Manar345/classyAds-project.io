@@ -130,3 +130,38 @@
 .numbers .container .row .item:hover .num {
   background-color: #049bb9;
 }
+/* --------------------------------------------------- */
+.featurs .container .card {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+.featurs .container .card .feat-icon {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+.featurs .container .card .feat-icon .sub-tit {
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 0.6em;
+  font-weight: bold;
+  background-color: #ddd;
+}
+.featurs .container .card .heart {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+.featurs .container .card .heart i {
+  color: var(--main-clr);
+}
+.featurs .container .card .heart:hover {
+  background-color: rgb(216, 59, 59);
+}
+.featurs .container .card .heart:hover i {
+  color: #fff;
+}
+/* -------------------------------------------------- */
