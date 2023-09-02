@@ -4,6 +4,9 @@
 .active {
   color: #0dcaf0 !important;
 }
+nav {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
 .nav-item {
   padding: 5px;
 }
@@ -137,19 +140,22 @@
 .featurs .container .card {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
-.featurs .container .card .icon {
+.featurs .container .card .icon,
+.trend .container .icon {
   display: flex;
   justify-content: space-between;
   margin-bottom: 3px;
 }
-.featurs .container .card .icon .sub-tit {
+.featurs .container .card .icon .sub-tit,
+.trend .container .sub-tit {
   padding: 5px;
   border-radius: 20px;
-  font-size: 0.6em;
+  font-size: 0.7em;
   font-weight: bold;
+  width: fit-content;
   background-color: #ddd;
 }
-.container .card .heart {
+.container .heart {
   width: 30px;
   height: 30px;
   display: flex;
@@ -159,11 +165,11 @@
   transition: 0.5s;
   background-color: rgba(221, 221, 221, 0.3);
 }
-.container .card .heart i {
+.container .heart i {
   font-size: 1.1em;
   color: var(--main-clr);
 }
-.container .card .heart:hover {
+.container .heart:hover {
   background-color: rgb(216, 59, 59);
 }
 .container .card .heart:hover i {
@@ -176,6 +182,7 @@
 }
 .heading h3 {
   color: var(--main-clr);
+  margin-bottom: 15px;
 }
 .heading p {
   opacity: 0.7;
@@ -185,7 +192,7 @@
   content: "";
   position: absolute;
   bottom: 0;
-  left: 47%;
+  left: calc(50% - 40px);
   height: 2px;
   width: 80px;
   background-color: var(--main-clr);
@@ -226,3 +233,21 @@
   border-radius: 20px;
   background-color: var(--main-clr);
 }
+/* ----------------------------------------------- */
+.trend {
+  background-color: #f6f6f6;
+}
+.trend .heading {
+  margin-top: 50px;
+}
+.trend .heading::after {
+  left: 3%;
+}
+.trend .row .image img {
+  width: 200px;
+}
+.trnd {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+/* -------------------------------------------------- */
