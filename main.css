@@ -1,9 +1,7 @@
 :root {
   --main-clr: #0dcaf0;
 }
-.active {
-  color: #0dcaf0 !important;
-}
+
 nav {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
@@ -172,7 +170,7 @@ nav {
 .container .heart:hover {
   background-color: rgb(216, 59, 59);
 }
-.container .card .heart:hover i {
+.container .heart:hover i {
   color: #fff;
 }
 /* -------------------------------------------------- */
@@ -234,7 +232,8 @@ nav {
   background-color: var(--main-clr);
 }
 /* ----------------------------------------------- */
-.trend {
+.trend,
+.blog {
   background-color: #f6f6f6;
 }
 .trend .heading {
@@ -251,3 +250,52 @@ nav {
   overflow: hidden;
 }
 /* -------------------------------------------------- */
+.slid {
+  margin: 60px 30px;
+}
+.slid .heading h3 {
+  padding: 15px;
+}
+.slid-img img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.slid-img p {
+  opacity: 0.8;
+  margin: 10px;
+}
+.slid-text {
+  font-size: 1.3em;
+  font-style: italic;
+  margin: 20px 0px;
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 20px !important;
+}
+.carousel-inner {
+  width: 75% !important;
+}
+@media (max-width: 500px) {
+  .carousel-inner {
+    width: 100% !important;
+  }
+}
+/*---------------------------------------------------------------*/
+.blog {
+  padding: 50px 0px;
+  margin: 20px 0px;
+}
+.blog .cards {
+  margin-bottom: 20px;
+}
+.blog .card-title {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+.blog .card-body p {
+  opacity: 0.8;
+}
+/*------------------------------------*/
