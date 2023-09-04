@@ -286,7 +286,7 @@ nav {
 /*---------------------------------------------------------------*/
 .blog {
   padding: 50px 0px;
-  margin: 20px 0px;
+  margin-top: 20px;
 }
 .blog .cards {
   margin-bottom: 20px;
@@ -300,3 +300,66 @@ nav {
   opacity: 0.8;
 }
 /*------------------------------------*/
+.news {
+  padding: 40px 0px;
+  display: flex;
+  align-items: center;
+  font-weight: 200;
+}
+.news input {
+  font-style: italic;
+  caret-color: #000;
+  background: none;
+  border-bottom: 1px solid #fff !important;
+}
+.news input:focus {
+  background: none;
+  box-shadow: 0px 0px 0px transparent !important;
+}
+.news button[type="submit"] {
+  border: 0;
+  border-radius: 0;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.news button[type="submit"]:hover {
+  color: #fff;
+  background-color: #000;
+}
+/*--------------------------------------------------------*/
+footer {
+  padding: 50px 0px;
+  font-weight: 300;
+}
+footer input {
+  color: #fff !important;
+  box-shadow: 0px 0px 0px transparent !important;
+}
+footer .input-group input::placeholder,
+.news input::placeholder {
+  color: #fff;
+}
+footer .input-group input::placeholder {
+  font-size: 0.8em;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.5;
+}
+.logos a i {
+  color: #fff;
+  opacity: 0.5;
+}
+footer a:hover,
+.logos a i {
+  opacity: 0.75;
+}
+.logos a {
+  padding: 7px;
+  text-decoration: none;
+}
+/*Done :) */
